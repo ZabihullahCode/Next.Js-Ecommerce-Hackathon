@@ -2,26 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* .custom-img{
+  background-image: url("../../public/pictures/heropic.jpg")
+
+}; */
+/* global.css */
+
+.custom-img {
+  /* Common styles for the background */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Set the height as needed */
+
+  /* Default background image for larger screens */
+  background-image: url("../../public/pictures/heropic.jpg");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .custom-img {
+    /* Use a different background image for smaller screens */
+    background-image: url("../../public/pictures/heripicSmall.webp");
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.myDiscount {
+  transform: rotate(-90deg);
 }
