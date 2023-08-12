@@ -18,10 +18,10 @@ const Hero = () => {
               className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl
     mb-5 text-myColor"
             >
-              Ultimate <span className="text-orange-500">Finds&apos;</span>
+              Ultimate <span className="text-orange-500">Finds</span>
             </h1>
             <p className="mb-5 scroll-m-20 text-lg font-semibold tracking-tight text-myColor">
-              Welcome to our online emporium shopper's paradise where dreams
+              Welcome to our online emporium shopper&apos;s paradise where dreams
               come true! Explore a curated collection of premium products for
               you.
             </p>
